@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEMS | Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet"
+      />
+</head>
+
+<body>
+    <div class="d-flex min-vh-100" style="font-family: 'Lato', sans-serif">
+        <aside class="border-end shadow" id="sidebar">
+            <div class="d-flex p-3 text-center border-bottom">
+                <img src="images/logo.png" alt="GLK Logo" width="80" />
+                <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
+            </div>
+            <ul class="nav flex-column p-3">
+                <li class="nav-item"><a class="nav-link active fw-bold" href="#"><i class="bi bi-speedometer2"></i>
+                        Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="/images/inquiries.png" class="menu-tab-img"
+                            alt=""> Inquiries</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="/images/quotations.png" class="menu-tab-img"
+                            alt=""> Quotations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="./images/booking.png" class="menu-tab-img"
+                            alt="">Booking Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="./images/shipment.png" class="menu-tab-img"
+                            alt=""> Shipments</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="./images/reports.png" class="menu-tab-img"
+                            alt=""> Non-conformity Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="./images/feedback.png" class="menu-tab-img"
+                            alt=""> Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="./images/workspaces.png"
+                            class="menu-tab-img" alt=""> Workspaces</a></li>
+            </ul>
+
+        </aside>
+
+        <!-- Navbar -->
+        <div class="flex-grow-1 d-flex flex-column">
+            <nav class="navbar navbar-expand-lg px-4 py-2">
+                <div class="container-fluid" style="height: 55px;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Documents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Reporting
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Report 1</a></li>
+                                <li><a class="dropdown-item" href="#">Report 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="icon-btn"><i class="bi bi-search"></i></button>
+                        <button class="icon-btn"><i class="bi bi-clock"></i></button>
+                        <button class="icon-btn"><i class="bi bi-plus-circle"></i></button>
+                        <button class="icon-btn"><i class="bi bi-download"></i></button>
+                        <button class="icon-btn"><i class="bi bi-bell"></i></button>
+                        <button class="icon-btn"><i class="bi bi-calendar"></i></button>
+                        <div class="avatar">Ja</div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <main class="" style="background-color: rgb(233, 236, 239); height: 100%;">
+    <div class="bg-orange text-white p-4 rounded-bottom shadow-sm">
+        <h5 class="mb-1 fw-bold">Good Morning, Williamson</h5>
+        <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+    </div>
+
+                <div class="container mt-4 bg-white p-4 rounded">
+                    <h5>Pending Requests</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead style="background-color: rgb(245, 246, 250);">
+                                <tr>
+                                    <th>Request</th>
+                                    <th>Requested/Created By</th>
+                                    <th>Request Type</th>
+                                    <th>Created On</th>
+                                    <th>Additional</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>7131283</td>
+                                    <td>Bakhytgul Umtalieva <br> / ALA / FD</td>
+                                    <td><span class="btn btn-sm text-white" style="background-color: #f47824;">Leave
+                                            Request</span></td>
+                                    <td>June 25, 2023</td>
+                                    <td>Probation period will end in 7 days</td>
+                                    <td><span class="badge fw-light"
+                                            style="background-color: #D4EEE0; color: #17854A;">Open</span></td>
+                                </tr>
+                                <tr>
+                                    <td>DWC-00009/23</td>
+                                    <td>Muhammad Asim <br> / DWC / FD</td>
+                                    <td><span class="btn btn-sm text-white" style="background-color: #f47824;">Exit
+                                            List</span></td>
+                                    <td>April 14, 2023</td>
+                                    <td>Probation period will end in 7 days</td>
+                                    <td><span class="badge fw-light"
+                                            style="background-color: #FCDADA; color: #FF0000;">Close</span></td>
+                                </tr>
+                                <tr>
+                                    <td>ALA-00311/23</td>
+                                    <td>Moldir Kaldybalina <br> / ALA / MD</td>
+                                    <td><span class="btn btn-sm text-white" style="background-color: #04B555;">Probation
+                                            Assessment</span></td>
+                                    <td>July 11, 2023</td>
+                                    <td>Probation period will end in 7 days</td>
+                                    <td><span class="badge fw-light"
+                                            style="background-color: #FCF1EB; color: #F06E2F;">Pending</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+
+            <!--  -->
+            <!-- <div class="container mt-5">
+                <div class="row mb-3">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <h4>HR Process</h4>
+                        <div>
+                            <button class="btn" style="background-color: #f47824; color: white;">Off-boarding</button>
+                            <button class="btn" style="background-color: #04B555; color: white;">Off-boarding</button>
+                            <button class="btn" style="background-color: rgb(242, 242, 242);">Show More</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="row">
+                     HR Card 1
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://i.pravatar.cc/50?img=11" class="rounded-circle me-3" width="50"
+                                    height="50" />
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Assistant to CEO</h6>
+                                    <div class="text-muted">Candidate: Aruzhan Sagatova</div>
+                                    <div class="text-danger">GM: Siddique Khan</div>
+                                </div>
+                            </div>
+                            <div class="card-progress w-75 my-2"></div>
+                            <div class="text-muted mb-2">3 of 4 activities are completed</div>
+                            <div class="card-task-list">
+                                <div class="d-flex justify-content-between">
+                                    <span>Interview Assessment</span> <span class="task-check">✓</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Job Offer</span> <span class="task-check">✓</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Internal Training</span> <span class="text-muted">✗</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Probation Assessment</span> <span class="task-check">✓</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                     HR Card 2
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="https://i.pravatar.cc/50?img=22" class="rounded-circle me-3" width="50"
+                                    height="50" />
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Assistant to CEO</h6>
+                                    <div class="text-muted">Candidate: Aruzhan Sagatova</div>
+                                    <div class="text-danger">GM: Siddique Khan</div>
+                                </div>
+                            </div>
+                            <div class="card-progress w-75 my-2"></div>
+                            <div class="text-muted mb-2">3 of 4 activities are completed</div>
+                            <div class="card-task-list">
+                                <div class="d-flex justify-content-between">
+                                    <span>Interview Assessment</span> <span class="task-check">✓</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Job Offer</span> <span class="task-check">✓</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Internal Training</span> <span class="text-muted">✗</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Probation Assessment</span> <span class="task-check">✓</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     Birthday Card
+                    <div class="col-md-4">
+                        <div class="card birthday-card">
+                            <h6 class="fw-bold text-white bg-orange p-3 rounded-top" style="background-color: #ff7733;">
+                                Upcoming Birthday 🎉
+                            </h6>
+
+                             Slider Starts
+                            <div id="jennyCarousel" class="carousel slide my-3" data-bs-ride="carousel">
+                                <div class="carousel-inner text-center">
+                                    <div class="carousel-item active">
+                                        <img src="https://i.pravatar.cc/100?img=50" width="70" height="70" />
+                                        <h6 class="mt-2 mb-0">Jenny</h6>
+                                        <small class="text-muted">Mar, 18</small>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://i.pravatar.cc/100?img=21" width="70" height="70" />
+                                        <h6 class="mt-2 mb-0">Ali</h6>
+                                        <small class="text-muted">Mar, 19</small>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://i.pravatar.cc/100?img=30" width="70" height="70" />
+                                        <h6 class="mt-2 mb-0">Sara</h6>
+                                        <small class="text-muted">Mar, 20</small>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#jennyCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#jennyCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            Slider Ends
+
+                            <div class="birthday-list mx-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://i.pravatar.cc/40?img=11" class="me-2" />
+                                    <div>
+                                        <div class="fw-bold">Siddique Khan</div>
+                                        <div class="text-muted">siddique.khan@gmail.com</div>
+                                    </div>
+                                    <div class="ms-auto text-success">20 Mar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+</body>
+
+</html>

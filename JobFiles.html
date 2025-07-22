@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEMS | Job Files</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <style>
+      .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .table thead th {
+        vertical-align: middle;
+        background-color: #f9fafb;
+        font-weight: 600;
+      }
+
+      .table td,
+      .table th {
+        vertical-align: middle;
+      }
+
+      .form-control {
+        font-size: 14px;
+      }
+
+      .btn-search {
+        background-color: #3aa39f !important;
+        color: white !important;
+        font-weight: 600;
+      }
+
+      .dropdown-menu {
+        min-width: 120px;
+      }
+
+      .dropdown-item {
+        font-size: 14px;
+      }
+
+      .action-btn {
+        background-color: #f47824 !important;
+        color: white !important;
+      }
+
+      .table-hover tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .pagination {
+        margin: 0;
+      }
+      .search-icon {
+        position: absolute;
+        left: 5px;
+        width: 16px;
+        height: 16px;
+      }
+      .custom-table {
+        border-collapse: separate;
+        border-spacing: 0 10px; /* Adjust vertical spacing between rows */
+      }
+      .col input {
+        height: 40px;
+        border-radius: 7px !important;
+        margin-top: 7px;
+      }
+      .pagination .page-link {
+        border: none;
+        color: #333;
+      }
+
+      .pagination .page-item.active .page-link {
+        background-color: #f5f5f5;
+        color: #000;
+        border: none;
+      }
+
+      .pagination .page-link:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+
+  <body style="font-family: 'Lato', sans-serif">
+    <div class="d-flex min-vh-100">
+      <!-- Sidebar -->
+      <aside class="border-end shadow" id="sidebar">
+        <div class="d-flex p-3 text-center border-bottom">
+          <img src="images/logo.png" alt="GLK Logo" width="80" />
+          <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
+        </div>
+        <ul class="nav flex-column p-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="#"
+              ><i class="bi bi-speedometer2"></i> Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="/images/inquiries.png" class="menu-tab-img" alt="" />
+              Inquiries</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="/images/quotations.png" class="menu-tab-img" alt="" />
+              Quotations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="./images/booking.png"
+                class="menu-tab-img"
+                alt=""
+              />Booking Orders</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/shipment.png" class="menu-tab-img" alt="" />
+              Shipments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/reports.png" class="menu-tab-img" alt="" />
+              Non-conformity Reports</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/feedback.png" class="menu-tab-img" alt="" />
+              Feedback</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/workspaces.png" class="menu-tab-img" alt="" />
+              Workspaces</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Area -->
+      <div class="flex-grow-1 d-flex flex-column">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg px-4 py-2">
+          <div class="container-fluid" style="height: 55px">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Reporting</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Report 1</a></li>
+                  <li><a class="dropdown-item" href="#">Report 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-2">
+              <button class="icon-btn"><i class="bi bi-search"></i></button>
+              <button class="icon-btn"><i class="bi bi-clock"></i></button>
+              <button class="icon-btn">
+                <i class="bi bi-plus-circle"></i>
+              </button>
+              <button class="icon-btn"><i class="bi bi-download"></i></button>
+              <button class="icon-btn"><i class="bi bi-bell"></i></button>
+              <button class="icon-btn"><i class="bi bi-calendar"></i></button>
+              <div class="avatar">Ja</div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main
+          class="rounded-3"
+          style="background-color: rgb(233, 236, 239); height: 100%"
+        >
+          <div class="bg-orange text-white p-4 rounded-bottom shadow-sm">
+            <h5 class="mb-1 fw-bold">Good Morning, Williamson</h5>
+            <p class="mb-0">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium
+            </p>
+          </div>
+
+          <div class="container my-5">
+            <div class="card p-4">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h4 class="fw-bold">Jobs Files</h4>
+                <div>
+                  <img
+                    src="./images/trash.png"
+                    style="width: 23px; height: 28px"
+                    alt=""
+                  />
+                  <img
+                    src="./images/copy.png"
+                    style="width: 22px; height: 23px"
+                    class="mx-3"
+                    alt=""
+                  />
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle action-btn"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="width: 57px; height: 30px; font-size: 11px"
+                    >
+                      More
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end rounded-4">
+                      <li class="border-bottom">
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          View</a
+                        >
+                      </li>
+                      <li class="border-bottom">
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          Export</a
+                        >
+                      </li>
+                      <li class="border-bottom">
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          Edit</a
+                        >
+                      </li>
+                      <li class="border-bottom">
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          Make Copy</a
+                        >
+                      </li>
+                      <li class="border-bottom">
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          Export</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          style="color: rgb(117, 117, 117)"
+                          href="#"
+                          ><i
+                            class="bi bi-gear-fill me-2"
+                            style="color: rgb(164, 164, 164)"
+                          ></i>
+                          Edit</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Filter -->
+              <div class="row g-2 mb-3">
+                <div class="col-auto">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="checkAll"
+                    />
+                    <label class="form-check-label" for="checkAll">All</label>
+                  </div>
+
+                  <button
+                    class="btn btn-search position-relative d-flex align-items-center ps-4"
+                    style="font-size: 16px"
+                  >
+                    <img
+                      src="./images/white-search.png"
+                      alt=""
+                      class="search-icon"
+                    />
+                    Search
+                  </button>
+                </div>
+
+                <div class="col">
+                  <label for="">Subject: </label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col">
+                  <label for="">File Title: </label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col">
+                  <label for="">Ref No: </label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col">
+                  <label for="">Created By:</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table custom-table table-hover align-middle">
+                  <tbody>
+                    <tr class="mb-3">
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td><i class="bi bi-eye"></i></td>
+                      <td>
+                        <img
+                          src="./images/menu-icon.png"
+                          style="width: 4px; height: 16px"
+                          alt=""
+                        />
+                      </td>
+                      <td>MHC2545448454RRP</td>
+                      <td>KZ</td>
+                      <td>EXP-R 20/25258</td>
+                      <td>Muhammad Ali Khan Bhatti</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Pagination -->
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <div>
+                  <label>Show</label>
+                  <select
+                    class="form-select d-inline-block w-auto mx-2"
+                    style="
+                      width: 60px !important;
+                      height: 38px;
+                      font-size: 15px;
+                    "
+                  >
+                    <option selected>5</option>
+                    <option>10</option>
+                    <option>20</option>
+                  </select>
+                  <span>per page</span>
+                </div>
+                <div>
+                  <small class="me-5">1-5 of 15</small>
+                  <nav class="d-inline-block">
+                    <ul class="pagination pagination-sm mb-0">
+                      <li class="page-item disabled">
+                        <a class="page-link bg-transparent">←</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link">1</a>
+                      </li>
+                      <li class="page-item"><a class="page-link">2</a></li>
+                      <li class="page-item"><a class="page-link">3</a></li>
+                      <li class="page-item"><a class="page-link">4</a></li>
+                      <li class="page-item"><a class="page-link">→</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
