@@ -332,7 +332,8 @@ input[type="password"] {
   color: black;
   font-weight: 600;
 }
-.form-select, .form-control {
+.form-select,
+.form-control {
   height: 60px;
 }
 
@@ -373,4 +374,36 @@ input[type="password"] {
 .flex-grow-1 .nav-item .nav-link {
   font-weight: 500 !important;
   margin-right: 20px;
+}
+
+/*  */
+.action-icon {
+  color: #f47824;
+  width: 24px;
+  height: 24px;
+}
+.icon-txt {
+  font-size: 16px;
+}
+
+/*  */
+.members img {
+  width: 45px;
+  height: 44px;
+}
+.members .mem1 {
+  height: 70px;
+}
+.members h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.members p {
+  font-size: 12px;
+  color: #979797;
+}
+.modal-checkbox {
+  margin-left: 10px !important;
+  width: 23px;
+  height: 23px;
 }

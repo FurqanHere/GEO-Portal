@@ -1,311 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GEMS | Quotation</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>GEO | Quotation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 
     <style>
-      .card-custom {
-        background: #fff;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      }
-      .section-title {
-        font-weight: 700;
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
-      .info-label {
-        font-weight: 600;
-      }
-      .info-value {
-        color: #333;
-      }
-      .bordered-box {
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 10px;
-        background: #fff;
-      }
-      .actions-box a,
-      .actions-box button {
-        display: block;
-        margin-bottom: 10px;
-        text-align: left;
-      }
-      .created-info {
-        font-size: 14px;
-        color: #555;
-      }
+        .card-custom {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-label {
+            font-weight: 600;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        .bordered-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .actions-box a,
+        .actions-box button {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .created-info {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .detail {
+            color: #A9A9A9;
+            font-size: 16px;
+        }
+
+        .d-flex.justify-content-between.mb-2 {
+            margin-top: 20px;
+        }
     </style>
-  </head>
+</head>
 
-  <body style="font-family: 'Lato', sans-serif">
+<body style="font-family: 'Lato', sans-serif">
     <div class="d-flex min-vh-100">
-      <!-- Sidebar -->
-      <aside class="border-end shadow" id="sidebar">
-        <div class="d-flex p-3 text-center border-bottom">
-          <img src="images/logo.png" alt="GLK Logo" width="80" />
-          <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
-        </div>
-        <ul class="nav flex-column p-3">
-          <li class="nav-item">
-            <a class="nav-link active fw-bold" href="#"
-              ><i class="bi bi-speedometer2"></i> Dashboard</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="/images/inquiries.png" class="menu-tab-img" alt="" />
-              Inquiries</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="/images/quotations.png" class="menu-tab-img" alt="" />
-              Quotations</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img
-                src="./images/booking.png"
-                class="menu-tab-img"
-                alt=""
-              />Booking Orders</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="./images/shipment.png" class="menu-tab-img" alt="" />
-              Shipments</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="./images/reports.png" class="menu-tab-img" alt="" />
-              Non-conformity Reports</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="./images/feedback.png" class="menu-tab-img" alt="" />
-              Feedback</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="./images/workspaces.png" class="menu-tab-img" alt="" />
-              Workspaces</a
-            >
-          </li>
-        </ul>
-      </aside>
-
-      <!-- Main Area -->
-      <div class="flex-grow-1 d-flex flex-column">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg px-4 py-2">
-          <div class="container-fluid" style="height: 55px">
-            <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Overview</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documents</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  >Reporting</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Report 1</a></li>
-                  <li><a class="dropdown-item" href="#">Report 2</a></li>
-                </ul>
-              </li>
+        <!-- Sidebar -->
+        <aside class="border-end shadow" id="sidebar">
+            <div class="d-flex p-3 text-center border-bottom">
+                <img src="images/logo.png" alt="GLK Logo" width="80" />
+                <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
+            </div>
+            <ul class="nav flex-column p-3">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="#"><i class="bi bi-speedometer2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="/images/inquiries.png" class="menu-tab-img" alt="" />
+                        Inquiries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="/images/quotations.png" class="menu-tab-img" alt="" />
+                        Quotations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/booking.png" class="menu-tab-img" alt="" />Booking
+                        Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/shipment.png" class="menu-tab-img" alt="" />
+                        Shipments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/reports.png" class="menu-tab-img" alt="" />
+                        Non-conformity Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/feedback.png" class="menu-tab-img" alt="" />
+                        Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./images/workspaces.png" class="menu-tab-img" alt="" />
+                        Workspaces</a>
+                </li>
             </ul>
-            <div class="d-flex align-items-center gap-2">
-              <button class="icon-btn"><i class="bi bi-search"></i></button>
-              <button class="icon-btn"><i class="bi bi-clock"></i></button>
-              <button class="icon-btn">
-                <i class="bi bi-plus-circle"></i>
-              </button>
-              <button class="icon-btn"><i class="bi bi-download"></i></button>
-              <button class="icon-btn"><i class="bi bi-bell"></i></button>
-              <button class="icon-btn"><i class="bi bi-calendar"></i></button>
-              <div class="avatar">Ja</div>
-            </div>
-          </div>
-        </nav>
+        </aside>
 
-        <!-- Main Content -->
-        <main
-          class="rounded-3"
-          style="background-color: rgb(233, 236, 239); height: 100%"
-        >
-          <div class="bg-orange text-white p-4 rounded-bottom shadow-sm">
-            <h5 class="mb-1 fw-bold">Good Morning, Williamson</h5>
-            <p class="mb-0">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium
-            </p>
-          </div>
+        <!-- Main Area -->
+        <div class="flex-grow-1 d-flex flex-column">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg px-4 py-2">
+                <div class="container-fluid" style="height: 55px">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Overview</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Documents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Reporting</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Report 1</a></li>
+                                <li><a class="dropdown-item" href="#">Report 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="icon-btn"><i class="bi bi-search"></i></button>
+                        <button class="icon-btn"><i class="bi bi-clock"></i></button>
+                        <button class="icon-btn">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                        <button class="icon-btn"><i class="bi bi-download"></i></button>
+                        <button class="icon-btn"><i class="bi bi-bell"></i></button>
+                        <button class="icon-btn"><i class="bi bi-calendar"></i></button>
+                        <div class="avatar">Ja</div>
+                    </div>
+                </div>
+            </nav>
 
-          <div class="container py-5">
-            <div class="row g-4">
-              <!-- Left Column -->
-              <div class="col-lg-8">
-                <div class="card-custom">
-                  <h4 class="section-title">
-                    Quotation: New Mobile Api Inquiry
-                  </h4>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Subject:</span>
-                      <span class="info-value"
-                        >Quotation: New Mobile Api Inquiry</span
-                      >
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Quotation Number:</span>
-                      <span class="info-value">GL/QT - 6530795</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Status:</span>
-                      <span class="info-value">Secured</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Geo Quotation Status:</span>
-                      <span class="info-value text-danger">Rejected</span>
-                    </div>
-                  </div>
-                  <div class="mb-2">
-                    <span class="info-label">Rejected Reason:</span>
-                    <span class="info-value"
-                      >Removal Services New Api Inquiry</span
-                    >
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Inquiry:</span>
-                      <span class="info-value">KZ</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Type of cargo:</span>
-                      <span class="info-value">Other</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Origin Country:</span>
-                      <span class="info-value">KZ</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Destination Country:</span>
-                      <span class="info-value">PK</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Expected date of pick up:</span>
-                      <span class="info-value">202408-28</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Expected date of Delivery:</span>
-                      <span class="info-value">202408-28</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">ETD:</span>
-                      <span class="info-value">202408-28</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">ETA:</span>
-                      <span class="info-value">202408-28</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Mode:</span>
-                      <span class="info-value">Rail</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Weight:</span>
-                      <span class="info-value">10 LBS</span>
-                    </div>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-md-6">
-                      <span class="info-label">Volume:</span>
-                      <span class="info-value">5 CBM</span>
-                    </div>
-                    <div class="col-md-6">
-                      <span class="info-label">Cntr or Transport Type:</span>
-                      <span class="info-value">Wagon</span>
-                    </div>
-                  </div>
+            <!-- Main Content -->
+            <main class="rounded-3" style="background-color: rgb(233, 236, 239); height: 100%">
+                <div class="bg-orange text-white p-4 rounded-bottom shadow-sm">
+                    <h5 class="mb-1 fw-bold">Good Morning, Williamson</h5>
+                    <p class="mb-0">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium
+                    </p>
                 </div>
-              </div>
 
-              <!-- Right Column -->
-              <div class="col-lg-4">
-                <div class="bordered-box actions-box mb-4">
-                  <h5 class="section-title">Actions</h5>
-                  <button class="btn btn-outline-danger btn-sm">
-                    🗑 Move to Trash
-                  </button>
-                  <button class="btn btn-outline-secondary btn-sm">
-                    📜 View History
-                  </button>
-                  <button class="btn btn-outline-primary btn-sm">
-                    🖨 Print
-                  </button>
+                <div class="container my-4">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6 bg-white rounded-3 shadow" style="padding: 30px;">
+                            <h4 class="fw-bold">Quotation: New Mobile Api Inquiry</h6>
+                                <div class="border rounded-3 p-3 mt-4" style="max-width: 100%">
+                                    <div class="d-flex justify-content-between mb-2 mt-0">
+                                        <span>Subject:</span>
+                                        <span class="detail">Quotation: New Mobile Api Inquiry</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 text-muted">
+                                        <span>Quotation Number:</span>
+                                        <span class="detail">GL/QT - 6530795</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Status:</span>
+                                        <span class="detail">Secured</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Geo Quotation Status:</span>
+                                        <span class="detail">Rejected</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Rejected Reason:</span>
+                                        <span class="detail">Removal Services New Api Inquiry</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Inquiry:</span>
+                                        <span class="detail">KZ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Type of cargo:</span>
+                                        <span class="detail">Other</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Origin Country:</span>
+                                        <span class="detail">KZ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Destination Country:</span>
+                                        <span class="detail">PK</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Expected date of pick up:</span>
+                                        <span class="detail">202408-28</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Expected date of Delivery:</span>
+                                        <span class="detail">202408-28</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">ETD</span>
+                                        <span class="detail">202408-28</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">ETA</span>
+                                        <span class="detail">202408-28</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Mode:</span>
+                                        <span class="detail">Rail</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Weight</span>
+                                        <span class="detail">10 LBS</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Volume</span>
+                                        <span class="detail">5 CBM</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">Center of Transport</span>
+                                        <span class="detail">Wagon</span>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="bg-white rounded-3 p-4 shadow" style="width: 387px; height: 287px;">
+                                <h4 class="" style="font-size: 18px;">Action</h4>
+                                <div class="border p-4 mt-3 d-flex flex-column gap-3 rounded-3">
+                                    <div class="d-flex">
+                                        <i class="bi bi-trash3 me-2 action-icon"></i> <span class="icon-txt">Move to
+                                            Trash</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-clock-history me-2 action-icon"></i> <span class="icon-txt">View
+                                            History</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <i class="bi bi-printer me-2 action-icon"></i> <span
+                                            class="icon-txt">Print</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-3 mt-3 p-3 shadow" style="width: 387px; height: 302px;">
+                                <h4 class="mt-3" style="font-size: 18px;">Properties</h4>
+                                <div class="border p-3 mt-3 d-flex flex-column rounded-3">
+                                    <div class="d-flex justify-content-between border-bottom">
+                                        <span class="icon-txt mb-2">Unique Id:</span>
+                                        <span class="mb-2">149101</span>
+                                    </div>
+                                    <div class="border-bottom mt-2">
+                                        <span class="icon-txt">Subscribe:</span>
+                                        <p class="mb-2" style="color: #A9A9A9;">You are not subscribed to this object. (subscribe)</p>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <span class="icon-txt me-2">Created by:</span>
+                                        <p class="mb-0" style="color: #A9A9A9;">Me, On 23/09/2024 - 10:46</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bordered-box">
-                  <h5 class="section-title">Properties</h5>
-                  <p><span class="info-label">Unique Id:</span> 149102</p>
-                  <p>
-                    <span class="info-label">Subscribe:</span> You are not
-                    subscribed to this object. <a href="#">(subscribe)</a>
-                  </p>
-                  <p class="created-info">
-                    Created by: Me, On 23/09/2024 - 10:46
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+            </main>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
