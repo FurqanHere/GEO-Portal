@@ -112,6 +112,7 @@
 
         .subscriber-info {
             flex: 1;
+            margin-left: 5px;
         }
 
         .subscriber-info h6 {
@@ -126,11 +127,6 @@
         .checkmark {
             color: green;
             font-size: 20px;
-        }
-
-        .tab-menu {
-            /* border-bottom: 2px solid #ccc; */
-            margin-bottom: 20px;
         }
 
         .tab-menu .nav-link {
@@ -159,6 +155,9 @@
             width: 48px;
             height: 30px;
             font-size: 11px;
+        }
+        .nav-link {
+            margin-bottom: 0px !important;
         }
     </style>
 </head>
@@ -267,7 +266,7 @@
                             <!-- Top Tabs -->
                             <ul class="nav tab-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Details</a>
+                                    <a class="nav-link text-dark" href="#">Details</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Related to</a>
@@ -288,16 +287,18 @@
                             </div>
 
                             <!-- Grid of Subscribers -->
-                            <div class="row p-4 g-3">
+                            <div class="row px-4 py-2">
                                 <div class="col-md-3 col-sm-6">
                                     <div class="card-box">
                                         <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
                                         <div class="subscriber-info">
-                                            <h6><img src="./images/passport.png" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
-                                            <small>Globalink</small><br />
-                                            <small>piskunova@gmail.com</small>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
                                         </div>
-                                        <div class="checkmark">✔️</div>
                                     </div>
                                 </div>
                                 <!-- Subscriber 2 -->
@@ -305,11 +306,13 @@
                                     <div class="card-box">
                                         <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
                                         <div class="subscriber-info">
-                                            <h6>Natalia</h6>
-                                            <small>Globalink</small><br />
-                                            <small>nataliahr@gmail.com</small>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
                                         </div>
-                                        <div class="checkmark">✔️</div>
                                     </div>
                                 </div>
                                 <!-- Subscriber 3 -->
@@ -317,11 +320,13 @@
                                     <div class="card-box">
                                         <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
                                         <div class="subscriber-info">
-                                            <h6>Kim Fufi</h6>
-                                            <small>Globalink</small><br />
-                                            <small>kimfufiadmin@gmail.com</small>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
                                         </div>
-                                        <div class="checkmark">✔️</div>
                                     </div>
                                 </div>
                                 <!-- Subscriber 4 -->
@@ -329,16 +334,306 @@
                                     <div class="card-box">
                                         <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
                                         <div class="subscriber-info">
-                                            <h6>Javson Lee</h6>
-                                            <small>Globalink</small><br />
-                                            <small>javsonlee@gmail.com</small>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
                                         </div>
-                                        <div class="checkmark">✔️</div>
                                     </div>
                                 </div>
 
-                                <!-- Duplicate the above 4 cards to fill rest of the grid -->
-                                <!-- You can do this using backend or JavaScript loop -->
+                            </div>
+                            <div class="row px-4 py-2">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 2 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 3 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 4 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row px-4 py-2">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 2 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 3 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 4 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row px-4 py-2">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 2 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 3 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 4 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row px-4 py-2">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 2 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 3 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 4 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row px-4 py-2">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt=""> Tatyana</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">piskunova@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 2 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Natalia</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">nataliahr@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 3 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Kim Fufi</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">kimfufiadmin@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Subscriber 4 -->
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card-box">
+                                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="profile" />
+                                        <div class="subscriber-info">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fs-12px"><img src="./images/passport.png" class="me-2" style="border-radius: 0; width: 17px; height: 17px;" alt="">Javson Lee</h6>
+                                            <img src="./images/Active.png" style="width: 18px; height: 18px" alt="">
+                                            </div>
+                                            <small class="fs-10px">Globalink</small><br />
+                                            <small class="fs-10px">javsonlee@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             </div>
                         </div>
