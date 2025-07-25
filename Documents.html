@@ -102,8 +102,22 @@
     <div class="d-flex min-vh-100">
       <!-- Sidebar -->
       <aside class="border-end shadow" id="sidebar">
-        <div class="d-flex p-3 text-center border-bottom">
+        <div
+          class="d-flex align-items-center justify-content-center p-3 text-center border-bottom"
+        >
           <img src="images/logo.png" alt="GLK Logo" width="80" />
+
+          <div
+            class="d-flex align-items-center justify-content-center ms-3"
+            style="height: 100%"
+          >
+            <img
+              src="./images/vertical-line.png"
+              alt="|"
+              style="height: 40px"
+            />
+          </div>
+
           <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
         </div>
         <ul class="nav flex-column p-3">
@@ -164,6 +178,7 @@
       <div class="flex-grow-1 d-flex flex-column">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg px-4 py-2">
+          <nav class="navbar navbar-expand-lg px-4 py-2">
           <div class="container-fluid" style="height: 55px">
             <ul
               class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center"
@@ -171,7 +186,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Overview</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tasks</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Documents</a>
               </li>
@@ -184,14 +201,16 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  >Reporting</a
                 >
+                  Reporting
+                </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Report 1</a></li>
                   <li><a class="dropdown-item" href="#">Report 2</a></li>
                 </ul>
               </li>
             </ul>
+
             <div class="d-flex align-items-center gap-2">
               <button class="icon-btn"><i class="bi bi-search"></i></button>
               <button class="icon-btn"><i class="bi bi-clock"></i></button>
@@ -201,9 +220,46 @@
               <button class="icon-btn"><i class="bi bi-download"></i></button>
               <button class="icon-btn"><i class="bi bi-bell"></i></button>
               <button class="icon-btn"><i class="bi bi-calendar"></i></button>
-              <div class="avatar">Ja</div>
+              <div class="profile-wrapper float-end me-5">
+                <div class="avatar">Ja</div>
+
+                <div class="dropdown-menu-profile">
+                  <div class="user-header d-flex align-items-center">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt="Profile"
+                    />
+                    <div>
+                      <h6>Steve Smith</h6>
+                      <small>UI/UX Designer</small>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex flex-column">
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-gear me-2" style="color: #818181"></i>
+                      Settings
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-person me-2" style="color: #818181"></i>
+                      Account
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i
+                        class="bi bi-question-circle me-2"
+                        style="color: #818181"
+                      ></i>
+                      Help
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181"
+                      >Logout</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </nav>
         </nav>
 
         <!-- Main Content -->
@@ -219,8 +275,8 @@
             </p>
           </div>
 
-          <div class="container my-5">
-            <div class="card p-4">
+          <div class="container d-flex justify-content-center align-items-center my-5">
+            <div class="card p-4" style="box-shadow: none; width: 90%;">
               <div
                 class="d-flex justify-content-between align-items-center mb-3"
               >

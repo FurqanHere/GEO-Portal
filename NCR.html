@@ -13,33 +13,47 @@
       rel="stylesheet"
     />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-        rel="stylesheet"
-      />
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
   </head>
 
   <body style="font-family: 'Lato', sans-serif">
     <div class="d-flex min-vh-100">
       <aside class="border-end shadow" id="sidebar">
-        <div class="d-flex p-3 text-center border-bottom">
+        <div
+          class="d-flex align-items-center justify-content-center p-3 text-center border-bottom"
+        >
           <img src="images/logo.png" alt="GLK Logo" width="80" />
+
+          <div
+            class="d-flex align-items-center justify-content-center ms-3"
+            style="height: 100%"
+          >
+            <img
+              src="./images/vertical-line.png"
+              alt="|"
+              style="height: 40px"
+            />
+          </div>
+
           <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
         </div>
         <ul class="nav flex-column p-3">
           <li class="nav-item">
-            <a class="nav-link active fw-bold" href="#"
-              ><i class="bi bi-speedometer2"></i> Dashboard</a
+            <a class="nav-link" href="./Dashboard.html"
+              ><i class="bi bi-grid" style="margin-right: 8px"></i> Dashboard</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="./Inquiries.html"
               ><img src="/images/inquiries.png" class="menu-tab-img" alt="" />
               Inquiries</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="./Quotation.html"
               ><img src="/images/quotations.png" class="menu-tab-img" alt="" />
               Quotations</a
             >
@@ -72,8 +86,12 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="./images/workspaces.png" class="menu-tab-img" alt="" />
+            <a class="nav-link active fw-bold" href="./Workspaces.html"
+              ><img
+                src="./images/workspace-white.png"
+                class="menu-tab-img"
+                alt=""
+              />
               Workspaces</a
             >
           </li>
@@ -124,7 +142,43 @@
               <button class="icon-btn"><i class="bi bi-download"></i></button>
               <button class="icon-btn"><i class="bi bi-bell"></i></button>
               <button class="icon-btn"><i class="bi bi-calendar"></i></button>
-              <div class="avatar">Ja</div>
+              <div class="profile-wrapper float-end me-5">
+                <div class="avatar">Ja</div>
+
+                <div class="dropdown-menu-profile">
+                  <div class="user-header d-flex align-items-center">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt="Profile"
+                    />
+                    <div>
+                      <h6>Steve Smith</h6>
+                      <small>UI/UX Designer</small>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex flex-column">
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-gear me-2" style="color: #818181"></i>
+                      Settings
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-person me-2" style="color: #818181"></i>
+                      Account
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i
+                        class="bi bi-question-circle me-2"
+                        style="color: #818181"
+                      ></i>
+                      Help
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181"
+                      >Logout</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -141,22 +195,22 @@
             </p>
           </div>
 
-          <div class="container my-5">
-            <div class="card p-4 shadow">
-              <div class="d-flex justify-content-between align-items-center mb-4">
+          <div
+            class="container my-5 d-flex justify-content-center align-items-center"
+          >
+            <div class="card p-4" style="box-shadow: none; width: 90%">
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
                 <h5 class="mb-1 fw-bold">NCR</h5>
-                <button class="btn ms-4 rounded-3 addNCR-button">
+                <a
+                  href="./AddNCR.html"
+                  class="btn ms-4 rounded-3 addNCR-button"
+                  style="font-size: 11px;"
+                >
                   Add NCR +
-                </button>
+                </a>
               </div>
-
-              <input
-                type="text"
-                placeholder="Name"
-                class="p-3 rounded border w-50"
-                name=""
-                id=""
-              />
 
               <div class="table-responsive">
                 <table class="table custom-table-spacing">

@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .login-body {
   background-color: #f47824;
   height: 100vh;
@@ -122,6 +126,13 @@ input[type="password"] {
   background-color: #e0691f;
 }
 
+.navbar.navbar-expand-lg.px-4.py-2 {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Make sure it's above other content */
+  background-color: white; /* Ensure it's not transparent */
+}
+
 /* Dashboard */
 #sidebar {
   width: 220px;
@@ -163,7 +174,7 @@ input[type="password"] {
 .nav-link.active {
   background-color: #f47824;
   color: white !important;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .bg-orange {
@@ -361,7 +372,7 @@ input[type="password"] {
 
 /* Travel Request */
 .travel-request-input {
-  width: 280px !important;
+  width: 261.5px !important;
   height: 50px;
   margin-right: 20px;
 }
@@ -414,4 +425,137 @@ input[type="password"] {
 }
 .fs-10px {
   font-size: 10px;
+}
+/* Sales Information */
+.sales-inp-clr::placeholder {
+  color: #828282;
+  font-weight: normal;
+}
+
+/* Avatar */
+.avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #28a5a5;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu-profile {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: none;
+  z-index: 1000;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-wrapper:hover .dropdown-menu-profile {
+  display: block;
+}
+
+.user-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.user-header h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.user-header small {
+  color: gray;
+}
+
+.dropdown-item {
+  font-size: 15px;
+  padding: 0.5rem 0;
+}
+
+/* Home */
+.gray {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  color: #d9d9d9;
+  font-size: 15px;
+}
+.redish {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #fe7676;
+  color: #fe7676;
+  font-size: 15px;
+}
+.purple {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #a179bf;
+  color: #a179bf;
+  font-size: 15px;
+}
+.due-date {
+  border: 1px solid #00000033;
+  height: 42px;
+}
+.late-date {
+  background-color: #fff1f1;
+  color: #f04438;
+  width: 97px;
+  height: 23px;
+  font-size: 13px;
+}
+.person {
+  width: 43px;
+  height: 43px;
+}
+.activity-details {
+  height: 83px;
+}
+/* Collapse */
+/* Remove default triangle marker on summary */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.no-marker {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Optional: rotate the arrow when open */
+details[open] .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Optional: smooth transition for collapse/expand */
+.comment-section > div {
+  transition: all 0.4s ease-in-out;
+}
+
+/* Request Detail */
+.top-bar-inp {
+  width: 409px;
+  height: 32px;
 }

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEO | Request Detail Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body style="font-family: 'Lato', sans-serif">
+    <div class="d-flex min-vh-100">
+      <aside class="border-end shadow" id="sidebar">
+        <div
+          class="d-flex align-items-center justify-content-center p-3 text-center border-bottom"
+        >
+          <img src="images/logo.png" alt="GLK Logo" width="80" />
+
+          <div
+            class="d-flex align-items-center justify-content-center ms-3"
+            style="height: 100%"
+          >
+            <img
+              src="./images/vertical-line.png"
+              alt="|"
+              style="height: 40px"
+            />
+          </div>
+
+          <h6 class="mt-2 text-name fw-bold ms-3">Air Asana</h6>
+        </div>
+
+        <ul class="nav flex-column p-3">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="./Dashboard.html"
+              ><i class="bi bi-grid" style="margin-right: 8px"></i> Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Inquiries.html"
+              ><img src="/images/inquiries.png" class="menu-tab-img" alt="" />
+              Inquiries</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Quotation.html"
+              ><img src="/images/quotations.png" class="menu-tab-img" alt="" />
+              Quotations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="./images/booking.png"
+                class="menu-tab-img"
+                alt=""
+              />Booking Orders</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/shipment.png" class="menu-tab-img" alt="" />
+              Shipments</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/reports.png" class="menu-tab-img" alt="" />
+              Non-conformity Reports</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="./images/feedback.png" class="menu-tab-img" alt="" />
+              Feedback</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Workspaces.html"
+              ><img src="./images/workspaces.png" class="menu-tab-img" alt="" />
+              Workspaces</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Navbar -->
+      <div class="flex-grow-1 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg px-4 py-2">
+          <div class="container-fluid" style="height: 55px">
+            <!-- <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Reporting</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Report 1</a></li>
+                  <li><a class="dropdown-item" href="#">Report 2</a></li>
+                </ul>
+              </li>
+            </ul> -->
+
+            <div>
+            <input type="text" class="form-control me-2 top-bar-inp" placeholder="Search" />
+            <img src="./images/top-bar-inp.png" alt="">
+            </div>
+            
+            <div class="d-flex align-items-center gap-2">
+              
+              <button class="icon-btn"><i class="bi bi-search"></i></button>
+              <button class="icon-btn"><i class="bi bi-clock"></i></button>
+              <button class="icon-btn">
+                <i class="bi bi-plus-circle"></i>
+              </button>
+              <button class="icon-btn"><i class="bi bi-download"></i></button>
+              <button class="icon-btn"><i class="bi bi-bell"></i></button>
+              <button class="icon-btn"><i class="bi bi-calendar"></i></button>
+              <div class="profile-wrapper float-end me-5">
+                <div class="avatar">Ja</div>
+
+                <div class="dropdown-menu-profile">
+                  <div class="user-header d-flex align-items-center">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt="Profile"
+                    />
+                    <div>
+                      <h6>Steve Smith</h6>
+                      <small>UI/UX Designer</small>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex flex-column">
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-gear me-2" style="color: #818181"></i>
+                      Settings
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i class="bi bi-person me-2" style="color: #818181"></i>
+                      Account
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181">
+                      <i
+                        class="bi bi-question-circle me-2"
+                        style="color: #818181"
+                      ></i>
+                      Help
+                    </a>
+                    <a href="#" class="dropdown-item" style="color: #818181"
+                      >Logout</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <main
+          class="rounded-3"
+          style="background-color: rgb(233, 236, 239); height: 100%"
+        >
+          <div
+            class="d-flex bg-orange text-white p-4 rounded-bottom shadow-sm"
+            style="height: 102px"
+          >
+            <h5
+              class="mb-1 fw-bold d-flex justify-content-center align-items-center"
+              style="font-size: 20px"
+            >
+              Home
+              <span
+                class="bg-white d-block rounded mx-2"
+                style="width: 7px; height: 7px"
+              ></span
+              >Workspace Import/Road shipment/MRV-ALA/TO 176364
+            </h5>
+          </div>
+
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-8">
+                <!--  -->
+                <div class="card p-4 shadow border-0">
+                  <details class="project-section">
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold" style="border-radius: 8px">
+                        Projects
+                      </h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        style="
+                          width: 16px;
+                          height: 16px;
+                          transition: transform 0.3s ease;
+                        "
+                        class="arrow-icon"
+                        alt="Toggle Projects"
+                      />
+                    </summary>
+
+                    <!-- Collapsible Content -->
+                    <span style="color: #898a8d">Kungard Windform</span>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between mt-2"
+                    >
+                      <span style="color: #898a8d">Solar West</span>
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <button
+                          class="btn me-3 text-white rounded-1"
+                          style="background-color: #f47824"
+                        >
+                          + Add your first Project
+                        </button>
+                        <span style="color: #898a8d">View all</span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+
+                <!--  -->
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details class="workspace-section" open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold" style="border-radius: 8px">
+                        Workspace
+                      </h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        style="
+                          width: 16px;
+                          height: 16px;
+                          transition: transform 0.3s ease;
+                        "
+                        class="arrow-icon"
+                        alt="Toggle Workspace"
+                      />
+                    </summary>
+
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <span style="color: #898a8d"
+                        >You have no workspaces yet</span
+                      >
+
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <button
+                          class="btn me-3 text-white rounded-1"
+                          style="background-color: #f47824"
+                        >
+                          + Add your first Project
+                        </button>
+                        <span style="color: #898a8d">View all</span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+
+                <!--  -->
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details class="task-section" open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold" style="border-radius: 8px">
+                        Late and upcoming tasks
+                      </h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        style="
+                          width: 16px;
+                          height: 16px;
+                          transition: transform 0.3s ease;
+                        "
+                        class="arrow-icon"
+                        alt="Toggle Tasks"
+                      />
+                    </summary>
+
+                    <!-- Task items start -->
+                    <div
+                      class="due-date d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span class="me-5">No Due Date</span>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/task.png"
+                          class="me-3"
+                          style="width: 14.2px; height: 18px"
+                          alt=""
+                        />
+                        <span>Test 123</span>
+                      </div>
+                    </div>
+
+                    <div
+                      class="due-date d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span class="me-5">No Due Date</span>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/task.png"
+                          class="me-3"
+                          style="width: 14.2px; height: 18px"
+                          alt=""
+                        />
+                        <span>Test 123</span>
+                      </div>
+                    </div>
+
+                    <div
+                      class="due-date d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span class="me-5">No Due Date</span>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/task.png"
+                          class="me-3"
+                          style="width: 14.2px; height: 18px"
+                          alt=""
+                        />
+                        <span>Test 123</span>
+                      </div>
+                    </div>
+
+                    <div
+                      class="due-date d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span
+                        class="me-5 d-flex justify-content-center align-items-center late-date"
+                        >462 days late</span
+                      >
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/task.png"
+                          class="me-3"
+                          style="width: 14.2px; height: 18px"
+                          alt=""
+                        />
+                        <span
+                          >Air Shipment Almaty to Pakistan - 27-02-2024
+                          Afternoon</span
+                        >
+                      </div>
+                    </div>
+
+                    <div
+                      class="due-date d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span
+                        class="me-5 d-flex justify-content-center align-items-center late-date"
+                        >261 days late</span
+                      >
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./images/task.png"
+                          class="me-3"
+                          style="width: 14.2px; height: 18px"
+                          alt=""
+                        />
+                        <span
+                          >PO 226370 // Import // DE-ALA // FCA // Hydro
+                          //</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Bottom Action Buttons -->
+                    <div
+                      class="d-flex justify-content-end align-items-center mt-4"
+                    >
+                      <button
+                        class="btn me-3 text-white rounded-1"
+                        style="background-color: #f47824"
+                      >
+                        + Add join file
+                      </button>
+                      <span style="color: #898a8d">View all</span>
+                    </div>
+                  </details>
+                </div>
+
+                <!--  -->
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold">Activity</h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        class="arrow-icon"
+                        width="16"
+                        height="16"
+                        alt="Toggle"
+                      />
+                    </summary>
+
+                    <div
+                      class="activity-scroll"
+                      style="height: 350px; overflow-y: auto"
+                    >
+                      <!-- Activity Item 1 -->
+                      <div
+                        class="due-date activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                      >
+                        <span class="me-5">
+                          <img
+                            src="./images/person.png"
+                            class="person"
+                            alt="Person"
+                          />
+                        </span>
+                        <div
+                          class="d-flex flex-column justify-content-center h-100"
+                        >
+                          <span
+                            >Air Shipment Almaty to Pakistan - 27-02-2024
+                            Afternoon</span
+                          >
+                          <div class="d-flex align-items-center mt-1">
+                            <img
+                              src="./images/task.png"
+                              class="me-3"
+                              style="width: 14.2px; height: 18px"
+                              alt="Task"
+                            />
+                            <span
+                              >PO 226370 // Import // DE-ALA // FCA // Hydro
+                              //</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Activity Item 2 -->
+                      <div
+                        class="due-date activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                      >
+                        <span class="me-5">
+                          <img
+                            src="./images/person.png"
+                            class="person"
+                            alt="Person"
+                          />
+                        </span>
+                        <div
+                          class="d-flex flex-column justify-content-center h-100"
+                        >
+                          <span
+                            >Ruslan Gusseinov / Globalink made several changes
+                            on the task</span
+                          >
+                          <div class="d-flex align-items-center mt-1">
+                            <img
+                              src="./images/task.png"
+                              class="me-3"
+                              style="width: 14.2px; height: 18px"
+                              alt="Task"
+                            />
+                            <span>Test editor 2</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Activity Item 3 -->
+                      <div
+                        class="due-date activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                      >
+                        <span class="me-5">
+                          <img
+                            src="./images/person.png"
+                            class="person"
+                            alt="Person"
+                          />
+                        </span>
+                        <div
+                          class="d-flex flex-column justify-content-center h-100"
+                        >
+                          <span
+                            >Atif Awan / Globalink made ​​several changes on the
+                            task</span
+                          >
+                          <div class="d-flex align-items-center mt-1">
+                            <img
+                              src="./images/task.png"
+                              class="me-3"
+                              style="width: 14.2px; height: 18px"
+                              alt="Task"
+                            />
+                            <span
+                              >Air Shipment Almaty to Pakistan - 27-02-2024
+                              Afternoon</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Activity Item 4 -->
+                      <div
+                        class="due-date activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                      >
+                        <span class="me-5">
+                          <img
+                            src="./images/person.png"
+                            class="person"
+                            alt="Person"
+                          />
+                        </span>
+                        <div
+                          class="d-flex flex-column justify-content-center h-100"
+                        >
+                          <span
+                            >Ruslan Gusseinov / Globalink made several changes
+                            on the task</span
+                          >
+                          <div class="d-flex align-items-center mt-1">
+                            <img
+                              src="./images/task.png"
+                              class="me-3"
+                              style="width: 14.2px; height: 18px"
+                              alt="Task"
+                            />
+                            <span>Test editor 2</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Activity Item 5 -->
+                      <div
+                        class="due-date activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                      >
+                        <span class="me-5">
+                          <img
+                            src="./images/person.png"
+                            class="person"
+                            alt="Person"
+                          />
+                        </span>
+                        <div
+                          class="d-flex flex-column justify-content-center h-100"
+                        >
+                          <span
+                            >Ruslan Gusseinov / Globalink made several changes
+                            on the task</span
+                          >
+                          <div class="d-flex align-items-center mt-1">
+                            <img
+                              src="./images/task.png"
+                              class="me-3"
+                              style="width: 14.2px; height: 18px"
+                              alt="Task"
+                            />
+                            <span>Test editor 2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-end align-items-center mt-4"
+                    >
+                      <button
+                        class="btn me-3 text-white rounded-1 add-file-btn"
+                      >
+                        + Add join file
+                      </button>
+                      <span class="text-muted">View all</span>
+                    </div>
+                  </details>
+                </div>
+
+                <!--  -->
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details class="comment-section" open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold" style="border-radius: 8px">
+                        Latest Comments
+                      </h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        style="
+                          width: 16px;
+                          height: 16px;
+                          transition: transform 0.3s ease;
+                        "
+                        class="arrow-icon"
+                        alt="Toggle Comments"
+                      />
+                    </summary>
+
+                    <!-- Comment 1 -->
+                    <div
+                      class="activity-details d-flex justify-content-start align-items-center px-3 mt-3"
+                    >
+                      <span class="me-5">
+                        <img src="./images/person.png" class="person" alt="" />
+                      </span>
+                      <div
+                        class="d-flex flex-column justify-content-center h-100"
+                      >
+                        <span style="color: #f47824">Air Astana</span>
+                        <div class="mt-1 d-flex flex-column">
+                          <span>yesterday at 12:45 pm</span>
+                          <span style="color: #898a8d"
+                            >Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Comment 2 -->
+                    <div
+                      class="activity-details d-flex justify-content-start align-items-center px-3 mt-5"
+                    >
+                      <span class="me-5">
+                        <img src="./images/person.png" class="person" alt="" />
+                      </span>
+                      <div
+                        class="d-flex flex-column justify-content-center h-100"
+                      >
+                        <span style="color: #f47824">Air Astana</span>
+                        <div class="mt-1 d-flex flex-column">
+                          <span style="font-weight: light"
+                            >yesterday at 12:45 pm</span
+                          >
+                          <span style="color: #898a8d; font-weight: light"
+                            >Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- See All -->
+                    <div
+                      class="d-flex align-items-center justify-content-end mt-3"
+                    >
+                      <span style="color: #898a8d">See all</span>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-4 shadow border-0">
+                  <details class="task-status-section" open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-2 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold" style="border-radius: 8px">
+                        Task Status
+                      </h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        class="arrow-icon"
+                        style="
+                          width: 16px;
+                          height: 16px;
+                          transition: transform 0.3s ease;
+                        "
+                        alt="Toggle"
+                      />
+                    </summary>
+
+                    <span class="mb-4 d-block" style="color: #898a8d">
+                      You have no projects yet
+                    </span>
+
+                    <div
+                      class="d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <img
+                        src="./images/circle.png"
+                        style="width: 200px; height: 200px"
+                        alt=""
+                      />
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-3 w-100"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <span class="gray me-2"></span>
+                          <span>Overdue</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <span class="redish me-2"></span>
+                          <span>Complete</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <span class="purple me-2"></span>
+                          <span>Without Due Date</span>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold">Complete Tasks</h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        class="arrow-icon"
+                        width="16"
+                        height="16"
+                        alt="Toggle"
+                      />
+                    </summary>
+
+                    <div class="activity-scroll">
+                      <div
+                        class="d-flex justify-content-start align-items-center px-3"
+                      >
+                        <div class="d-flex align-items-center mt-1">
+                          <img
+                            src="./images/task.png"
+                            class="me-3"
+                            style="width: 14.2px; height: 18px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >Togzhan Tazhiyeva / Globalink : Import/Road
+                            shipment/MRV-ALA/TO 176364</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-end align-items-center mt-4"
+                    >
+                      <button
+                        class="btn me-3 text-white rounded-1 add-file-btn"
+                      >
+                        + Add join file
+                      </button>
+                      <span class="text-muted">View all</span>
+                    </div>
+                  </details>
+                </div>
+                <div class="card p-4 shadow border-0 mt-3">
+                  <details open>
+                    <summary
+                      class="d-flex justify-content-between align-items-center mb-4 no-marker"
+                    >
+                      <h5 class="mb-1 fw-bold">Documents</h5>
+                      <img
+                        src="./images/chevron-down.png"
+                        class="arrow-icon"
+                        width="16"
+                        height="16"
+                        alt="Toggle"
+                      />
+                    </summary>
+
+                    <div class="activity-scroll">
+                      <div
+                        class="d-flex justify-content-start align-items-start flex-column"
+                      >
+                        <div
+                          class="d-flex align-items-center justify-content-start mt-1"
+                        >
+                          <img
+                            src="./images/pdf.png"
+                            class="me-3"
+                            style="width: 26px; height: 26px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >03550.pdf</span
+                          >
+                        </div>
+
+                        <div class="d-flex align-items-center mt-1">
+                          <img
+                            src="./images/pdf.png"
+                            class="me-3"
+                            style="width: 26px; height: 26px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >5027.pdf</span
+                          >
+                        </div>
+
+                        <div class="d-flex align-items-center mt-1">
+                          <img
+                            src="./images/pdf.png"
+                            class="me-3"
+                            style="width: 26px; height: 26px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >5027.pdf</span
+                          >
+                        </div>
+
+                        <div class="d-flex align-items-center mt-1">
+                          <img
+                            src="./images/pdf.png"
+                            class="me-3"
+                            style="width: 26px; height: 26px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >СМР ЭйрАстана2.jfif.pdf</span
+                          >
+                        </div>
+
+                        <div class="d-flex align-items-center mt-1">
+                          <img
+                            src="./images/pdf.png"
+                            class="me-3"
+                            style="width: 26px; height: 26px"
+                            alt="Task"
+                          />
+                          <span style="color: #898a8d; font-size: 15px"
+                            >СМР ЭйрАстана2.jfif.pdf</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-end align-items-center mt-4"
+                    >
+                      <button
+                        class="btn me-3 text-white rounded-1 add-file-btn"
+                      >
+                        + Add join file
+                      </button>
+                      <span class="text-muted">View all</span>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
